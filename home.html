@@ -131,7 +131,7 @@ font-size: 45px;
 }
 	</style>
   </head>
-  <body onload="checkCookie()">
+  <body>
   
 
   
@@ -173,13 +173,11 @@ font-size: 45px;
 	    <p id="counter1">0</p>
 	  <div class="row" id="pagebottom">
       
-      <textarea id="input"></textarea>
-	  <br>
+      
 <div>
-    <button id="save">Save</button>
+    
 </div>
-       <br>
-	    <a href="./admin.html" class="btn btn-warning" align="middle">Enter The Admin Area!</a>
+     
       </div>
 	  </div>
     </div>
@@ -204,54 +202,8 @@ font-size: 45px;
 	
 	<script>
 	
-	// Cookie Collection Test
 	
-	function setCookie(cname,cvalue,exdays) {
-    var d = new Date();
-    d.setTime(d.getTime() + (7*24*60*60*1000));
-    var expires = "expires=" + d.toGMTString();
-    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
-}
 
-function getCookie(cname) {
-    var name = cname + "=";
-    var decodedCookie = decodeURIComponent(document.cookie);
-    var ca = decodedCookie.split(';');
-    for(var i = 0; i < ca.length; i++) {
-        var c = ca[i];
-        while (c.charAt(0) == ' ') {
-            c = c.substring(1);
-        }
-        if (c.indexOf(name) == 0) {
-            return c.substring(name.length, c.length);
-        }
-    }
-    return "";
-}
-
-function checkCookie() {
-    var user=getCookie("username");
-    if (user != "") {
-        alert("Welcome again " + user);
-    } else {
-       user = prompt("Please enter your name:","");
-       if (user != "" && user != null) {
-           setCookie("username", user, 30);
-       }
-    }
-}
-
-
-
-	
-	
-	
-	
-	
-	
-	
-  var counter;
-  var mySharedData = counter + input;
 
 var botui = new BotUI('lander');
 
@@ -271,21 +223,11 @@ botui.message.add({
     loading: false,
     content: 'The Academy is in its very early design and construction stage so there arent many working features yet ' + 'Feel free to have a look around and be sure to check on our forward progress!'
   });
-   visitCounter();
+  
   });
   })
 	
- var visitCounter = function() {
-  
-   document.getElementById("counter1").innerHTML = counter +1;
-    sendData();
-	
-  var sendData = (function (global) {
-    document.getElementById("save").addEventListener("click", function () {
-        global.localStorage.setItem("mySharedData", document.getElementById("output").value);
-    }, false);
-}(window));
-  }
+
 	</script>
 	
 	
