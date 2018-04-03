@@ -1,0 +1,27 @@
+body {
+   background-color: #734A12;
+   width: 450px;
+   height: 500px;
+   
+   border-radius: 25px;
+   border-style: solid;
+	border-color: #E8C782;
+	border-width: 8px;
+   color: #E8C782;
+   text-align: center;
+}
+.display-none {
+  display: none;
+  
+}
+.fill {
+  display: block;
+  width: 100%;
+  background-color: #E8C782;
+  color: #734A12; 
+}
+textarea {
+  resize: vertical;
+  background-color: #E8C782;
+  color: #734A12;
+}

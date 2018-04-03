@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Admin</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="https://unpkg.com/botui/build/botui.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/botui/build/botui-theme-default.css" />
+    <meta name="description" content="A Ged Tutor Bot. A Bot Designed To Help Users Pass A Ged Exam Built Using BotUI.">
+	<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+	
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<style>
+	body{
+	background-image: url("CrBg2.png");
+	
+	background-size: 100% 100%;
+	
+	}
+	
+	#navbar {
+	background-color: #734A12;
+	border-style: solid;
+	border-color: #E8C782;
+	border-width: 8px;
+	border-radius: 25px;
+	color: #E8C782;
+	opacity: 0.9;
+    filter: alpha(opacity=90);
+	}
+	#console {
+	margin-left: 275px;
+	margin-right: 150px;
+	margin-bottom: 200px;
+	border-style: solid;
+	border-color: #734A12;
+	border-width: 8px;
+	border-radius: 25px;
+	background-color: #E8C782;
+	color: #734A12;
+	opacity: 0.9;
+    filter: alpha(opacity=90);
+	}
+	
+	
+	#quarters1 {
+	z-index: +1;
+	border-style: solid;
+	border-radius: 25px;
+	border-width: 12px;
+	border-color: #734A12;
+	background-color: #734A12;
+	opacity: 0.6;
+    filter: alpha(opacity=60);
+	}
+
+h1 {
+font-size: 45px;
+}
+#header {
+   background-color: #734A12;
+   width: 100%;
+   margin-top: 15px;
+   border-radius: 25px;
+   border-style: solid;
+	border-color: #E8C782;
+	border-width: 8px;
+   color: #E8C782;
+   text-align: center;
+   margin-bottom: 50px;
+   font-family: 'Merriweather', serif;
+   opacity: 0.9;
+    filter: alpha(opacity=90);
+   }
+
+   .btn-warning {
+   background-color: #734A12;
+   color: #E8C782;
+   opacity: 0.9;
+    filter: alpha(opacity=90);
+}
+
+    #submit {
+   background-color: #734A12;
+   color: #E8C782;
+   opacity: 0.9;
+    filter: alpha(opacity=90);
+}
+   
+   #menu2{
+
+  border-radius: 15px;
+   border-style: solid;
+	border-color: #E8C782;
+	border-width: 8px;
+   background-color: #734A12;
+   color: #E8C782;
+   opacity: 0.9;
+    filter: alpha(opacity=90);
+}
+   
+    #menu {
+   z-index: +1;
+    position: fixed;
+	margin-top: 75px;
+	margin-left: 1215px;
+   border-style: solid;
+	border-color: #E8C782;
+	color: #E8C782;
+	border-width: 8px;
+	border-radius: 10px;
+	opacity: 0.9;
+    filter: alpha(opacity=90);
+   }
+   
+   
+   #botImage {
+   	
+   }
+   
+ #sidenav1 {
+  background-color: #734A12;
+  font-family: 'Merriweather', serif;
+  width: 225px;
+  height: 1400px;
+  margin-left: 25px;
+     border-radius: 25px;
+   border-style: solid;
+	border-color: #E8C782;
+	color: #E8C782;
+	border-width: 8px;
+	opacity: 0.9;
+    filter: alpha(opacity=90);
+   }
+#navControl {
+	z-index: +1;
+	 border-style: solid;
+	border-color: #E8C782;
+	color: #E8C782;
+	border-width: 8px;
+	border-radius: 10px;
+	opacity: 0.9;
+    filter: alpha(opacity=90);
+	}
+        
+        #pagebottom {
+            height:200px;
+        }
+		
+.footer {
+  position: relative;
+  margin-top: -150px; /* negative value of footer height */
+  height: 150px;
+  margin-right: 150px;
+  margin-left: 25px;
+  clear:both;
+  padding-top:20px;
+  background-color: #734A12;
+  border-radius: 25px;
+   border-style: solid;
+	border-color: #E8C782;
+	border-width: 8px;
+	color: #E8C782;
+	opacity: 0.9;
+    filter: alpha(opacity=90);
+}
+}
+	</style>
+  </head>
+  <body>
+  
+ 
+  
+ <div class="container"id= "header" >
+  <div class="page-header">
+    <h1>Study Hall</h1>  
+            
+  </div>    
+</div>
+
+<div class="btn-group btn-group-justified" id="menu2">
+  
+  <a href="#" class="btn btn-warning">Coming Soon</a>
+  <a href="#" class="btn btn-warning">Coming Soon</a>
+  <a href="./gedStudyBot.html" class="btn btn-warning">Ged-Study-Bot</a>
+  <a href="#" class="btn btn-warning">Coming Soon</a>
+  <a href="#" class="btn btn-warning">Coming Soon</a>
+  
+
+</div>
+
+    <div class="btn-group btn-group-vertical" id="menu">
+  
+  <a href="./radio.html"  class="btn btn-warning"
+  target="popup" 
+  onclick="window.open('./radio.html','popup','width=385,height=540'); return false;">
+   Radio
+</a>
+  
+  <a href="./contactForm/index.html" class="btn btn-warning"  
+  target="popup" 
+  onclick="window.open('./contactForm/index.html','popup','width=450,height=500'); return false;">
+   Contact Us
+</a>
+  <a href="./quarters.html" class="btn btn-warning">Quarters!</a>
+   <a href="./home1.html" class="btn btn-warning">Student Info</a>
+  <a href="./commons.html" class="btn btn-warning">The Commons</a>
+  <a href="./blog.html" class="btn btn-warning">Blog</a>
+  <a href="./admin.html" class="btn btn-warning">Admin</a>
+</div>
+
+</div>
+
+<br><br>
+     <div class="col-sm-2 sidenav" id= "sidenav1">
+	 <br>
+      <p><a href="#">Link</a></p>
+      <p><a href="#">Link</a></p>
+      <p><a href="#">Link</a></p>
+	  <br>
+	  <div class="well">
+        <p>ADS</p>
+      </div>
+      <div class="well">
+        <p>ADS</p>
+      </div>
+    </div>
+	
+	
+	
+ 
+
+  <div class="container-fluid text-center" id="console">    
+  <br>
+     <h4>The Study Hall is where you will find New Instructors, Course Materials and Other New Features.</h4>
+	 
+  <div class="row content">
+  
+  <div class="col-sm-4"> 
+        <img src="avatar1.png" alt="Ged Study Bot" width="325px" height="475px" align="right">
+    </div>
+    <div class="col-sm-4"> 
+  
+    <div class="botui-app-container" id="quarters1" align="left">
+	
+     
+<iframe
+    width="375"
+    height="470"
+    src="https://console.dialogflow.com/api-client/demo/embedded/3158180e-199b-4f19-8222-fd6db7fbd581">
+</iframe>
+     </div>
+      <br><br><br><br><br><br><br><br><br><br>
+	  <div class="col-sm-4"> 
+	  <div class="row" id="pagebottom">
+      
+      
+      </div>
+	  <form>
+  Enter Text Here:<br>
+  <input type="text" id="userInput"><br>
+   <button id="submit" onclick="respond()">Submit</button>
+</form>
+	  
+	  
+	  </div>
+    </div>
+	
+	 
+	</div>
+	</div>
+	
+
+	
+	
+	
+	  
+	
+	
+	
+    <script src="https://cdn.jsdelivr.net/vue/latest/vue.min.js"></script>
+    <script src="https://unpkg.com/botui/build/botui.js"></script>
+   
+
+	
+	<script>
+	
+	function respond() {
+	var text;
+var patterns = document.getElementById("submit").value;
+
+switch(patterns) {
+    case "hello":
+        text = "Hey there!";
+        break;
+    case "commands":
+        text = "I am not yet programmed with command functions.";
+        break;
+    case "what is":
+        text = "My connection to the database is broken. if you can fix it i may be able to retrieve that information.";
+        break;
+    default:
+        text = "I don't know, ask again...";
+}
+
+   botui.message.add({
+    delay: 3000,
+    loading: true,
+	content: text
+	});
+  
+
+}
+
+
+
+	function convoPatterns(userInput) {
+	  
+		    console.log(patterns[0]);
+		 
+	}
+	
+	
+	
+
+var botui = new BotUI('quarters1');
+
+
+
+
+  
+  
+	</script>
+	
+	
+  
+	
+  <div id="wrap">
+  <div id="main" class="container clear-top">
+    <p>
+	<a href="./tos/index.html" class="btn btn-warning"  
+  target="popup" 
+  onclick="window.open('./tos/index.html','popup','width=450,height=500'); return false;">
+  Terms and Conditions
+</a>
+	</p>
+  </div>
+</div>
+<footer class="footer"></footer>
+     
+	
+
+  </body>
+</html>

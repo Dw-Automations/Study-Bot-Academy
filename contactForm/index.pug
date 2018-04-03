@@ -1,0 +1,11 @@
+.grid
+  .grid__col--12
+    form#contact-form
+      label(for='inputName') Name
+      input#inputName.form__input(type='text', placeholder='Name', name='name')
+      label(for='inputEmail') Email
+      input#inputEmail.form__input(type='email', placeholder='Email', name='email')
+      label(for='inputMessage') Message
+      textarea#inputMessage.form__input(rows='3', placeholder='Your Message', name='message')
+      input.display-none(type='text', name='_gotcha')
+      input#email-submit-btn.btn--default.fill(type='submit', value='Send')

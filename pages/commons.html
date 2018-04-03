@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Admin</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="https://unpkg.com/botui/build/botui.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/botui/build/botui-theme-default.css" />
+    <meta name="description" content="A Ged Tutor Bot. A Bot Designed To Help Users Pass A Ged Exam Built Using BotUI.">
+	<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+	
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<style>
+	body{
+	background-image: url("CrBg2.png");
+	
+	background-size: 100% 100%;
+	
+	}
+	
+	#navbar {
+	background-color: #734A12;
+	border-style: solid;
+	border-color: #E8C782;
+	border-width: 8px;
+	border-radius: 25px;
+	color: #E8C782;
+	opacity: 0.9;
+    filter: alpha(opacity=90);
+	}
+	#console {
+	margin-left: 275px;
+	margin-right: 200px;
+	margin-bottom: 200px;
+	border-style: solid;
+	border-color: #734A12;
+	border-width: 8px;
+	border-radius: 25px;
+	background-color: #E8C782;
+	color: #734A12;
+	opacity: 0.9;
+    filter: alpha(opacity=90);
+	}
+	
+	
+	#quarters1 {
+	z-index: +1;
+	border-style: solid;
+	border-radius: 25px;
+	border-width: 12px;
+	border-color: #734A12;
+	background-color: #734A12;
+	opacity: 0.5;
+    filter: alpha(opacity=50);
+	}
+	
+	
+
+h1 {
+font-size: 45px;
+}
+#header {
+   background-color: #734A12;
+   width: 100%;
+   margin-top: 15px;
+   border-radius: 25px;
+   border-style: solid;
+	border-color: #E8C782;
+	border-width: 8px;
+   color: #E8C782;
+   text-align: center;
+   margin-bottom: 50px;
+   font-family: 'Merriweather', serif;
+   opacity: 0.9;
+    filter: alpha(opacity=90);
+   }
+
+   .btn-warning {
+   background-color: #734A12;
+   color: #E8C782;
+   opacity: 0.9;
+    filter: alpha(opacity=90);
+}
+   
+   #menu2{
+
+  border-radius: 15px;
+   border-style: solid;
+	border-color: #E8C782;
+	border-width: 8px;
+   background-color: #734A12;
+   color: #E8C782;
+   opacity: 0.9;
+    filter: alpha(opacity=90);
+}
+   
+    #menu {
+   z-index: +1;
+   width: 135px;
+    position: fixed;
+	margin-top: 75px;
+	margin-left: 1185px;
+   border-style: solid;
+	border-color: #E8C782;
+	color: #E8C782;
+	border-width: 8px;
+	border-radius: 10px;
+	opacity: 0.9;
+    filter: alpha(opacity=90);
+   }
+   
+   
+   
+   
+   #botImage {
+   	
+   }
+   
+ #sidenav1 {
+  background-color: #734A12;
+  font-family: 'Merriweather', serif;
+  width: 225px;
+  height: 1400px;
+  margin-left: 25px;
+     border-radius: 25px;
+   border-style: solid;
+	border-color: #E8C782;
+	color: #E8C782;
+	border-width: 8px;
+	opacity: 0.9;
+    filter: alpha(opacity=90);
+   }
+#navControl {
+	z-index: +1;
+	 border-style: solid;
+	border-color: #E8C782;
+	color: #E8C782;
+	border-width: 8px;
+	border-radius: 10px;
+	opacity: 0.9;
+    filter: alpha(opacity=90);
+	}
+        
+       
+		
+.footer {
+  position: relative;
+  margin-top: -150px; /* negative value of footer height */
+  height: 150px;
+  margin-right: 150px;
+  margin-left: 25px;
+  clear:both;
+  padding-top:20px;
+  background-color: #734A12;
+  border-radius: 25px;
+   border-style: solid;
+	border-color: #E8C782;
+	border-width: 8px;
+	color: #E8C782;
+	opacity: 0.9;
+    filter: alpha(opacity=90);
+}
+}
+	</style>
+  </head>
+  <body>
+  
+ 
+  
+ <div class="container"id= "header" >
+  <div class="page-header">
+    <h1>The Common Area</h1>  
+            
+  </div>    
+</div>
+
+<div class="btn-group btn-group-justified" id="menu2">
+   <a href="#" class="btn btn-warning">Coming Soon</a>
+  <a href="#" class="btn btn-warning">Coming Soon</a>
+    
+	<a href="./terms.html" class="btn btn-warning"  
+  target="popup"  
+  onclick="window.open('./terms.html','popup','width=1350px,height=1000px'); return false;">
+  Terms and Conditions
+</a>
+ 
+ 
+  <a href="#" class="btn btn-warning">Coming Soon</a>
+  <a href="#" class="btn btn-warning">Coming Soon!</a>
+</div>
+
+    <div class="btn-group btn-group-vertical" id="menu">
+  
+  <a href="./radio.html"  class="btn btn-warning"
+  target="popup" 
+  onclick="window.open('./radio.html','popup','width=385,height=540'); return false;">
+   Radio
+</a>
+  
+  <a href="./contactForm/index.html" class="btn btn-warning"  
+  target="popup" 
+  onclick="window.open('./contactForm/index.html','popup','width=450,height=500'); return false;">
+   Contact Us
+</a>
+  
+ <a href="./quarters.html" class="btn btn-warning">Quarters!</a>
+   <a href="./studyhall.html" class="btn btn-warning">Study Hall</a>
+  <a href="./home1.html" class="btn btn-warning">Student Info</a>
+  <a href="./blog.html" class="btn btn-warning">Blog</a>
+  <a href="./admin.html" class="btn btn-warning">Admin</a>
+</div>
+
+<br><br>
+     <div class="col-sm-2 sidenav" id= "sidenav1">
+	<br>
+	 <h3 id='online'>Users Online: </h3>
+	 <br>
+      <p><a href="#">Link</a></p>
+      <p><a href="#">Link</a></p>
+      <p><a href="#">Link</a></p>
+	  <br>
+	  <div class="well">
+        <p>ADS</p>
+      </div>
+      <div class="well">
+        <p>ADS</p>
+      </div>
+    </div>
+	
+	
+	
+ 
+
+  <div class="container-fluid text-center" id="console">    
+  <br>
+     <h4>The Common Area is where you can make Study Buddies, Get Lesson Assistance and Participate in Team Milestones</h4>
+	 
+  <div class="row content">
+  
+  <div class="col-sm-4"> 
+        <img src="instr2.png" alt="Ged Study Bot" width="325px" height="475px" align="right">
+    </div>
+    <div class="col-sm-4"> 
+  
+    <div class="botui-app-container" id="quarters1" align="left">
+	
+  <bot-ui></bot-ui>
+     </div>
+      <br><br><br><br><br><br><br><br><br><br>
+	  <div class="col-sm-4"> 
+	  <div class="row" id="pagebottom">
+      
+      
+      </div>
+	  </div>
+    </div>
+	
+	 
+	</div>
+	</div>
+	
+
+	
+	
+	
+	  
+	
+	
+	
+    <script src="https://cdn.jsdelivr.net/vue/latest/vue.min.js"></script>
+    <script src="https://unpkg.com/botui/build/botui.js"></script>
+    <script <a href="http://www.example.com" target="_blank">Example.com in a new tab</a> id="jsNavi"></script>
+
+	
+	<script>
+	var math = false;
+var english = false;
+var history = false;
+var science = false;
+
+var botui = new BotUI('quarters1');
+
+
+botui.message.add({
+    delay: 3000,
+    loading: true,
+	content: 'Welcome to the Campus Common Area!'
+	}).then(function () {
+	botui.message.add({
+    delay: 5000,
+    loading: true,
+  content: 'The Common Area is where you can make friends or study buddys, get tutoring assistance and help reach team milestones.'
+}).then(function () { // get the result
+  botui.message.add({
+	delay: 4500,
+    loading: true,
+    content: 'Be sure to stop in often to see whats happening in the commons!'
+  }).then(function() {
+	  
+	  
+  });
+	
+ });
+ })
+  
+
+  
+  
+	</script>
+	
+	
+  
+	
+  <div id="wrap">
+  <div id="main" class="container clear-top">
+    <p>
+	
+
+
+	</p>
+  </div>
+</div>
+<footer class="footer"></footer>
+     
+	
+
+  </body>
+</html>

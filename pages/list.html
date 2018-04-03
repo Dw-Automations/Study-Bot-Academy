@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<style>
+body {
+   background-color: #734A12;
+   width: 350px;
+   height: 500px;
+   
+   border-radius: 25px;
+   border-style: solid;
+	border-color: #E8C782;
+	border-width: 8px;
+   color: #E8C782;
+   text-align: center;
+}
+
+</style>
+</head>
+<body>
+
+<div class="container-fluid id="list">
+
+ <h1>To Do List</h1>
+	<form id="todoForm">
+	    <input id="todoInput">
+		<button type="button" onclick="todoList()">Submit</button>
+		</form>
+        <ul id="todoList"></ul>
+  
+
+</div>
+  <script>
+	    function todoList() {
+		    var item = document.getElementById('todoInput').value;
+			var text = document.createTextNode(item);
+			var newItem = document.createElement('li');
+			newItem.appendChild(text);
+			document.getElementById("todoList").appendChild(newItem);
+		}
+	
+	</script>
+
+
+</body>
+</html>
